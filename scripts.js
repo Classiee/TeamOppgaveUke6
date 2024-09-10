@@ -16,11 +16,6 @@ function updateView() {
             Kulhet:
         <img class="image" src="${updateImg ?? 'IMG/carempty.jpg'}"/>
         </div>
-        
-        <button onclick = "hilse()">👋</button>
-        <button onclick = "hilse()">👊</button>
-        <button onclick = "hilse()">🖕</button>
-        
     </div>
     `;
 }
