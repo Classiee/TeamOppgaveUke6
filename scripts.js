@@ -75,7 +75,7 @@ function Kompis1() {
     this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
             if (kulhetsFaktor > 70) {
-
+                alert("Kul hilsen tilbake! Kompisen din er imponert.");
                 kulhetsFaktor += 10;
             } else {
                 alert("Greit nok, men du kan bli mye kulere!");
@@ -106,7 +106,7 @@ function Kompis2() {
     this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
             if (kulhetsFaktor > 70) {
-
+                alert("Kul hilsen tilbake! Kompisen din er imponert.");
                 kulhetsFaktor += 10;
             } else {
                 alert("Greit nok, men du kan bli mye kulere!");
