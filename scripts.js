@@ -89,8 +89,6 @@ function Kompis2(){
     skjulHilseValg();
 }
 
-function jehovasVitne() {
-
 function jehovasVitne(){
     const hilsninger = ["Be han holde kjeft", "håndhilse", "nikke"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
