@@ -1,6 +1,6 @@
 const app = document.getElementById("app");
 let bil;
-let kulhetsFaktor = 20;
+let kulhetsFaktor = 0;
 let updateImg;
 let kompisDialog;
 let bilDialog;
@@ -114,27 +114,36 @@ function gameOver(){
     };
 }
 function jehovasVitne() {
-    app.innerHTML += /*HTML*/`
-    <button onclick = "hilse()">👊</button>
-    <button onclick = "hilse()">🙏</button>
-    <button onclick = "hilse()">🫵</button>
-    `;
+    bilDialog = `
+        <div class="bilDialog"> 
+            <button onclick = "hilse()">👋</button>
+            <button onclick = "hilse()">👊</button>
+            <button onclick = "hilse()">🖕</button>
+        </div>`;
+    kompisDialog = `
+    <div class="kompisDialog"></div>`;
 }
 
 function bestemor() {
-    app.innerHTML += /*HTML*/`
-    <button onclick = "hilse()">👊</button>
-    <button onclick = "hilse()">🙏</button>
-    <button onclick = "hilse()">🫵</button>
-    `;
+    bilDialog = `
+        <div class="bilDialog"> 
+            <button onclick = "hilse()">👋</button>
+            <button onclick = "hilse()">👊</button>
+            <button onclick = "hilse()">🖕</button>
+        </div>`;
+    kompisDialog = `
+    <div class="kompisDialog"></div>`;
 }
 
 function flatEarther() {
-    app.innerHTML += /*HTML*/`
-    <button onclick = "hilse()">👊</button>
-    <button onclick = "hilse()">🙏</button>
-    <button onclick = "hilse()">🫵</button>
-    `;
+    bilDialog = `
+        <div class="bilDialog"> 
+            <button onclick = "hilse()">👋</button>
+            <button onclick = "hilse()">👊</button>
+            <button onclick = "hilse()">🖕</button>
+        </div>`;
+    kompisDialog = `
+    <div class="kompisDialog"></div>`;
 }
 
 function upgrade() {
