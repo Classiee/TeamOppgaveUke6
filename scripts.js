@@ -16,6 +16,11 @@ function updateView() {
             Kulhet:
         <img class="image" src="${updateImg ?? 'IMG/carempty.jpg'}"/>
         </div>
+        
+        <button onclick = "hilse()">👋</button>
+        <button onclick = "hilse()">👊</button>
+        <button onclick = "hilse()">🖕</button>
+        
     </div>
     `;
 }
@@ -29,14 +34,6 @@ function goodJob() {
 
 function badJob() {
 
-}
-
-function visAlt() {
-    app.innerHTML = /*HTML*/`
-        <button onclick = "hilse()">👋</button>
-        <button onclick = "hilse()">👊</button>
-        <button onclick = "hilse()">🖕</button>
-        `;
 }
 
 function Kompis() {
