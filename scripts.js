@@ -1,6 +1,6 @@
 const app = document.getElementById("app");
 let bil;
-let kulhetsFaktor = 0;
+let kulhetsFaktor = 100;
 let updateImg;
 let kompisDialog;
 let bilDialog;
@@ -42,7 +42,7 @@ function placeHolder(){
             </div>`;
             updateView();
 }
-
+gameOver()
 function gameOver(){
     exitText = `<div class="gameOver">Game Over!
             <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
