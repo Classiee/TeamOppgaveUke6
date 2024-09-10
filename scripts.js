@@ -175,7 +175,7 @@ function upgrade() {
 }
 
 function hilse() {
-
+        window.aktivKompis.hils(hilsen);
 }
 
 function randomEvent() {
@@ -187,5 +187,6 @@ function kjør() {
 }
 
 function skjulHilseValg() {
-
+    document.getElementById("ukjent").style.display = "none";
+    document.getElementById("ukjent").style.display = "block";
 }
