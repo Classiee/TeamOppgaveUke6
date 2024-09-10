@@ -40,6 +40,14 @@ function Kompis() {
     `;
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    if (kulhetsFaktor <= 30) {
+        updateImg = "IMG\carkompis1.png";
+      } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
+        updateImg = "IMG\carkompis1upgrade1.png";
+      } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
+        updateImg = "IMG\carkompis1upgrade2.png";
+      }
 
     this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
@@ -71,6 +79,14 @@ function Kompis1() {
     `;
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    if (kulhetsFaktor <= 30) {
+        updateImg = "IMG\carkompis2.png";
+      } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
+        updateImg = "IMG\carkompis2upgrade1.png";
+      } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
+        updateImg = "IMG\carkompis2upgrade2.png";
+      }
 
     this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
@@ -102,6 +118,14 @@ function Kompis2() {
     `;
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    if (kulhetsFaktor <= 30) {
+        updateImg = "IMG\carkompis3.png";
+      } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
+        updateImg = "IMG/carkompis3upgrade1.png";
+      } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
+        updateImg = "IMG\carkompis3upgrade2.png";
+      }
 
     this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
