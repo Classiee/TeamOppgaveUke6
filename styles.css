@@ -1,0 +1,79 @@
+.image {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+
+}
+.progressBar {
+    left: 670px;
+    position: relative;
+    z-index: 2;
+    height: 22px;
+    width: 300px;
+    border: 2px solid gray;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    
+}
+.updateBar {
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+
+}
+.gameOver {
+    position: absolute;
+    z-index: 3;
+    height: 350px;
+    width: 500px;
+    left: 260px;
+    top: 100px;
+    font-size: 150px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    color: gray;
+}
+
+.gameOverBtn {
+    position: absolute;
+    left: 190px;
+    top: 340px;
+    font-size: 30px;
+}
+button {
+    border-radius: 7px;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.bilDialog {
+    top: 130px;
+    left: 550px;
+    position: relative;
+    z-index: 2;
+    border: 2px solid black;
+    width: 230px;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+.kompisDialog {
+    top: 130px;
+    left: 150px;
+    position: relative;
+    z-index: 2;
+    border: 2px solid black;
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 5px black;
+}

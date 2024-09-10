@@ -1,40 +1,52 @@
-const app = document.getElementById("app")
+
 let bil;
-let kulhetsFaktor = 0;
+let kulhetsFaktor = 20;
 let updateImg;
 let kompisDialog;
 let bilDialog;
 let exitText;
+let myTimeout = setTimeout(start, 1000)
 
 updateView();
 function updateView() {
-
     document.getElementById('app').innerHTML = /*HTML*/`
     <div>
         <div class="progressBar">
             <div style="width: ${kulhetsFaktor}%" class="updateBar">${kulhetsFaktor}</div>
-            Kulhet:
-        <img class="image" src="${updateImg ?? 'IMG/carempty.jpg'}"/>
         </div>
-        
-        <button onclick = "hilse()">👋</button>
-        <button onclick = "hilse()">👊</button>
-        <button onclick = "hilse()">🖕</button>
-        
-    </div>
+            <img class="image" src="${updateImg ?? 'IMG/carempty.jpg'}"/>
+            ${kompisDialog ?? ''}
+            ${bilDialog ?? ''}
+            ${exitText ?? ''}
+        </div>
     `;
 }
 function start() {
-
+    exitText = `<div class="gameOver">Ready?
+            <button class="gameOverBtn" onclick="placeHolder()">Start</button></div>`;
+    kompisDialog = '';
+    bilDialog = '';
+        updateView();
+}
+function placeHolder(){
+    exitText = '';
+    bilDialog = `
+        <div class="bilDialog"> 
+            <button onclick = "hilse()">👋</button>
+            <button onclick = "hilse()">👊</button>
+            <button onclick = "hilse()">🖕</button>
+        </div>`;
+    kompisDialog = `
+        <div class="kompisDialog">Halla kompis!
+            </div>`;
+            updateView();
 }
 
-function goodJob() {
-
-}
-
-function badJob() {
-
-}
+function gameOver(){
+    exitText = `<div class="gameOver">Game Over!
+            <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
+    updateView();
+        }
 
 function Kompis() {
     const hilsninger = ["high five", "fist bump", "nikk"];
@@ -46,6 +58,7 @@ function Kompis() {
                 // getElementById("result").innerHTML = "Du hilste riktig, og bilen din er blitt kul!";
                 bil.kulhet += 10;
             } else {
+
                 alert("Greit nok, men du kan bli mye kulere!");
                 bil.kulhet -= 5;
             }
