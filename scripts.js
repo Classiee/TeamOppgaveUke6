@@ -1,4 +1,4 @@
-const app = document.getElementById("app")
+const app = document.getElementById("app");
 let bil;
 let kulhetsFaktor = 0;
 let updateImg;
@@ -37,6 +37,11 @@ function badJob() {
 }
 
 function Kompis() {
+    app.innerHTML = /*HTML*/`
+    <button onclick = "hilse()">👋</button>
+    <button onclick = "hilse()">👊</button>
+    <button onclick = "hilse()">🙂‍↕️</button>
+    `;
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
 
@@ -63,6 +68,11 @@ function Kompis() {
 }
 
 function Kompis1() {
+    app.innerHTML = /*HTML*/`
+    <button onclick = "hilse()">👋</button>
+    <button onclick = "hilse()">👊</button>
+    <button onclick = "hilse()">🙂‍↕️</button>
+    `;
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
 
@@ -89,6 +99,11 @@ function Kompis1() {
 }
 
 function Kompis2() {
+    app.innerHTML = /*HTML*/`
+    <button onclick = "hilse()">👋</button>
+    <button onclick = "hilse()">👊</button>
+    <button onclick = "hilse()">🙂‍↕️</button>
+    `;
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
 
@@ -115,15 +130,27 @@ function Kompis2() {
 }
 
 function jehovasVitne() {
-
+    app.innerHTML = /*HTML*/`
+    <button onclick = "hilse()">👊</button>
+    <button onclick = "hilse()">🙏</button>
+    <button onclick = "hilse()">🫵</button>
+    `;
 }
 
 function bestemor() {
-
+    app.innerHTML = /*HTML*/`
+    <button onclick = "hilse()">👊</button>
+    <button onclick = "hilse()">🙏</button>
+    <button onclick = "hilse()">🫵</button>
+    `;
 }
 
 function flatEarther() {
-
+    app.innerHTML = /*HTML*/`
+    <button onclick = "hilse()">👊</button>
+    <button onclick = "hilse()">🙏</button>
+    <button onclick = "hilse()">🫵</button>
+    `;
 }
 
 function upgrade() {
