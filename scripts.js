@@ -1,15 +1,22 @@
-let bil = 
+let bil =
 
+    function visAlt() {
+        app.innerHTML = /*HTML*/`
+    <button onclick = "hilse()">👋</button>
+    <button onclick = "hilse()">👊</button>
+    <button onclick = "hilse()">🖕</button>
+    `;
+    }
 function Kompis() {
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
-    
-    this.hils = function(hilsen) {
+
+    this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
             if (bil.kulhet > 70) {
                 // getElementById("result").innerHTML = "Du hilste riktig, og bilen din er blitt kul!";
                 bil.kulhet += 10;
-                
+
             }
         } else {
             alert("Greit nok, men du kan bli mye kulere!");
@@ -28,6 +35,7 @@ function Kompis() {
 }
 
 function Kompis1() {
+
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
     
@@ -80,6 +88,8 @@ function Kompis2(){
     }
     skjulHilseValg();
 }
+
+function jehovasVitne() {
 
 function jehovasVitne(){
     const hilsninger = ["Be han holde kjeft", "håndhilse", "nikke"];
@@ -162,22 +172,22 @@ function flatEarther(){
     skjulHilseValg();
 }
 
-function upgrade(){
-    
+function upgrade() {
+
 }
 
-function hilse(){
-    
+function hilse() {
+
 }
 
-function randomEvent(){
-    
+function randomEvent() {
+
 }
 
-function kjør(){
-    
+function kjør() {
+
 }
 
-function skjulHilseValg(){
-    
+function skjulHilseValg() {
+
 }
