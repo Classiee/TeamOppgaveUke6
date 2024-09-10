@@ -19,6 +19,7 @@ function updateView() {
     </div>
     `;
 }
+
 function start() {
 
 }
