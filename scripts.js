@@ -167,16 +167,7 @@ function hilse(hilsen) {
         } else {
             alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
         }
-    }
-    
-    if (kulhetsFaktor <= 30) {
-        updateImg = baseImg;
-    } else if (kulhetsFaktor > 30 && kulhetsFaktor <= 60) {
-        updateImg = upgrade1Img;
-    } else if (kulhetsFaktor > 60 && kulhetsFaktor <= 100) {
-        updateImg = upgrade2Img;
-    }
-    
+    }  
     updateView();
 }
 
