@@ -154,7 +154,7 @@ function upgrade() {
 }
 
 function hilse() {
-    
+
 }
 
 function randomEvent() {
