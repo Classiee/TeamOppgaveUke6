@@ -1,7 +1,4 @@
 const app = document.getElementById("app");
-const kompis1 = new Kompis(1);
-const kompis2 = new Kompis(2);
-const kompis3 = new Kompis(3);
 let bil;
 let kulhetsFaktor = 0;
 let updateImg;
@@ -35,9 +32,7 @@ function badJob() {
 
 }
 
-
-
-function kompis(type) {
+function Kompis(type) {
         app.innerHTML += /*HTML*/`
             <button onclick = "hilse()">👋</button>
             <button onclick = "hilse()">👊</button>
@@ -99,13 +94,10 @@ function kompis(type) {
             skjulHilseValg();
         };
     }
-        
-        
-        
-        
-        
-        
-}
+
+    const kompis1 = new Kompis(1);
+    const kompis2 = new Kompis(2);
+    const kompis3 = new Kompis(3);
 // function Kompis() {
 //     app.innerHTML += /*HTML*/`
 //     <button onclick = "hilse()">👋</button>
