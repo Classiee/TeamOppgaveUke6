@@ -56,6 +56,9 @@ function gameOver(){
             <button onclick = "hilse()">👊</button>
             <button onclick = "hilse()">🖕</button>
         </div>`;
+    kompisDialog = `
+        <div class="kompisDialog">Halla kompis!
+            </div>`;
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
 
