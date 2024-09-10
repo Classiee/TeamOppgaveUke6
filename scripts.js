@@ -1,6 +1,6 @@
-const app = document.getElementById("app");
+
 let bil;
-let kulhetsFaktor = 100;
+let kulhetsFaktor = 0;
 let updateImg;
 let kompisDialog;
 let bilDialog;
@@ -12,7 +12,7 @@ function updateView() {
     document.getElementById('app').innerHTML = /*HTML*/`
     <div>
         <div class="progressBar">
-            <div style="width: ${kulhetsFaktor}%" class="updateBar">${kulhetsFaktor}</div>
+            <div style="width: ${kulhetsFaktor}%" class="updateBar"><strong>${kulhetsFaktor}</strong></div>
         </div>
             <img class="image" src="${updateImg ?? 'IMG/carempty.jpg'}"/>
             ${kompisDialog ?? ''}
@@ -20,8 +20,28 @@ function updateView() {
             ${exitText ?? ''}
         </div>
     `;
+        if (kulhetsFaktor >= 100) {
+            gameWon();
+        } else if (kulhetsFaktor < 0) {
+            gameOver();
+        }
 }
-
+function gameOver(){
+    exitText = `
+    <div class="gameOver">Game Over!
+    <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
+    kompisDialog = '';
+    bilDialog = '';
+    updateView();
+}
+function gameWon(){
+    exitText = `
+        <div class="gameOver">DU VANT!
+        <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
+    kompisDialog = '';
+    bilDialog = '';
+    updateView();
+}
 function start() {
     exitText = `<div class="gameOver">Ready?
             <button class="gameOverBtn" onclick="placeHolder()">Start</button></div>`;
@@ -29,25 +49,26 @@ function start() {
     bilDialog = '';
         updateView();
 }
+
 function placeHolder(){
+    if (kulhetsFaktor <= 30) {
+        updateImg = 'IMG/caroil.jpg';
+    } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
+        updateImg = 'IMG/caroilupgrade1.jpg';
+    } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
+        updateImg = 'IMG/caroilupgrade2.jpg';
+    }
     exitText = '';
     bilDialog = `
         <div class="bilDialog"> 
-            <button onclick = "hilse()">👋</button>
-            <button onclick = "hilse()">👊</button>
-            <button onclick = "hilse()">🖕</button>
+            <button onclick = "">Upgrades? Tja...</button>
+            <button onclick = "">why, kjerra er jo grom?</button>
         </div>`;
     kompisDialog = `
-        <div class="kompisDialog">Halla kompis!
+        <div class="kompisDialog">Vil du ha en Upgrade?
             </div>`;
             updateView();
 }
-gameOver()
-function gameOver(){
-    exitText = `<div class="gameOver">Game Over!
-            <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
-    updateView();
- }
 
  function Kompis(type) {
     bilDialog = `
