@@ -144,16 +144,16 @@ function upgrade() {
 
 function hilse(hilsen) {
     if (hilsen === this.riktigHilsen) {
-        if (bil.kulhet > 70) {
-            bil.kulhet += 10;
+        if (kulhetsFaktor > 70) {
+            kulhetsFaktor += 10;
         } else {
             alert("Greit nok, men du kan bli mye kulere!");
-            bil.kulhet -= 5;
+            kulhetsFaktor -= 5;
         }
     } else {
         alert("Du hilste feil, og bilen din er ikke kul!");
-        bil.kulhet -= 10;
-        if (bil.kulhet > 70) {
+        kulhetsFaktor -= 10;
+        if (kulhetsFaktor > 70) {
             alert("Du er fortsatt kul, men dette ble en klein situasjon.");
         } else {
             alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
