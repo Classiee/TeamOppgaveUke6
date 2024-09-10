@@ -1,46 +1,21 @@
-let bil = 
+let bil = function Kompis() {};
 
-function Kompis(){
-    
-}
+function Kompis1() {}
 
-function Kompis1(){
-    
-}
+function Kompis2() {}
 
-function Kompis2(){
-    
-}
+function jehovasVitne() {}
 
-function jehovasVitne(){
-    
-}
+function bestemor() {}
 
-function bestemor(){
-    
-}
+function flatEarther() {}
 
-function flatEarther(){
-    
-}
+function upgrade() {}
 
-function upgrade(){
-    
-}
+function hilse() {}
 
-function hilse(){
-    
-}
+function randomEvent() {}
 
-function randomEvent(){
-    
-}
+function kjør() {}
 
-function kjør(){
-    
-}
-
-function skjulHilseValg(){
-    
-}
-
+function skjulHilseValg() {}
