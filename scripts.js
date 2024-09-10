@@ -133,7 +133,7 @@ function upgrade() {
 }
 
 function hilse() {
-        window.aktivKompis.hils(hilsen);
+    window.aktivKompis.hils(hilsen);
 }
 
 function randomEvent() {
