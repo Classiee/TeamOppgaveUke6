@@ -131,7 +131,7 @@ function upgrade() {
 }
 
 function hilse() {
-    window.aktivKompis.hils(hilsen);
+    
 }
 
 function randomEvent() {
