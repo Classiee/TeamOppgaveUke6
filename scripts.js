@@ -37,7 +37,7 @@ function badJob() {
 }
 
 function Kompis() {
-    app.innerHTML = /*HTML*/`
+    app.innerHTML += /*HTML*/`
     <button onclick = "hilse()">👋</button>
     <button onclick = "hilse()">👊</button>
     <button onclick = "hilse()">🙂‍↕️</button>
@@ -68,7 +68,7 @@ function Kompis() {
 }
 
 function Kompis1() {
-    app.innerHTML = /*HTML*/`
+    app.innerHTML += /*HTML*/`
     <button onclick = "hilse()">👋</button>
     <button onclick = "hilse()">👊</button>
     <button onclick = "hilse()">🙂‍↕️</button>
@@ -79,7 +79,7 @@ function Kompis1() {
     this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
             if (kulhetsFaktor > 70) {
-                
+
                 kulhetsFaktor += 10;
             } else {
                 alert("Greit nok, men du kan bli mye kulere!");
@@ -99,7 +99,7 @@ function Kompis1() {
 }
 
 function Kompis2() {
-    app.innerHTML = /*HTML*/`
+    app.innerHTML += /*HTML*/`
     <button onclick = "hilse()">👋</button>
     <button onclick = "hilse()">👊</button>
     <button onclick = "hilse()">🙂‍↕️</button>
@@ -110,7 +110,7 @@ function Kompis2() {
     this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
             if (kulhetsFaktor > 70) {
-                
+
                 kulhetsFaktor += 10;
             } else {
                 alert("Greit nok, men du kan bli mye kulere!");
@@ -130,7 +130,7 @@ function Kompis2() {
 }
 
 function jehovasVitne() {
-    app.innerHTML = /*HTML*/`
+    app.innerHTML += /*HTML*/`
     <button onclick = "hilse()">👊</button>
     <button onclick = "hilse()">🙏</button>
     <button onclick = "hilse()">🫵</button>
@@ -138,7 +138,7 @@ function jehovasVitne() {
 }
 
 function bestemor() {
-    app.innerHTML = /*HTML*/`
+    app.innerHTML += /*HTML*/`
     <button onclick = "hilse()">👊</button>
     <button onclick = "hilse()">🙏</button>
     <button onclick = "hilse()">🫵</button>
@@ -146,7 +146,7 @@ function bestemor() {
 }
 
 function flatEarther() {
-    app.innerHTML = /*HTML*/`
+    app.innerHTML += /*HTML*/`
     <button onclick = "hilse()">👊</button>
     <button onclick = "hilse()">🙏</button>
     <button onclick = "hilse()">🫵</button>
