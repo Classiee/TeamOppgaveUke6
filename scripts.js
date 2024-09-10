@@ -43,7 +43,7 @@ function Kompis() {
 
     this.hils = function (hilsen) {
         if (hilsen === this.riktigHilsen) {
-            if (kulhetsFaktor > 70) {
+            if (kulhetsFaktor > 60) {
                 kulhetsFaktor += 10;
                 updateImg = "IMG\carkompis1upgrade2.png"
             } else {
@@ -53,7 +53,7 @@ function Kompis() {
         } else {
             alert("Du hilste feil, og bilen din er ikke kul!");
             kulhetsFaktor -= 10;
-            if (kulhetsFaktor > 70) {
+            if (kulhetsFaktor < 70) {
                 alert("Du er fortsatt kul, men dette ble en klein situasjon.");
             } else {
                 alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhetsFaktor.");
@@ -154,6 +154,7 @@ function upgrade() {
 }
 
 function hilse() {
+    
 
 }
 
