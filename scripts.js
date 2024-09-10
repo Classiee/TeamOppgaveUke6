@@ -50,12 +50,12 @@ function gameOver(){
  }
 
  function Kompis(type) {
-    const app = document.getElementById("app");
-    app.innerHTML += /*HTML*/`
-        <button onclick="hilse()">👋</button>
-        <button onclick="hilse()">👊</button>
-        <button onclick="hilse()">🙂‍↕️</button>
-    `;
+    bilDialog = `
+        <div class="bilDialog"> 
+            <button onclick = "hilse()">👋</button>
+            <button onclick = "hilse()">👊</button>
+            <button onclick = "hilse()">🖕</button>
+        </div>`;
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
 
