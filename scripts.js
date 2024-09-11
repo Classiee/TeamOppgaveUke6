@@ -25,6 +25,7 @@ function updateView() {
   } else if (kulhetsFaktor < 0) {
     gameOver();
   }
+  randomEvent();
 }
 function gameOver() {
   exitText = `
