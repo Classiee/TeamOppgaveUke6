@@ -15,7 +15,7 @@ function randomEvent() {
   else {
     bestemor();
   }
-  
+  updateView();
 }
 
 function jehovasVitne() {
@@ -33,9 +33,8 @@ function jehovasVitne() {
       <button onclick = "greetingJehova(this)">🧙‍♂️(This is one slick ass mf)</button>
       <button onclick = "greetingJehova(this)">🐔(Be the cock)</button>
   </div>`;
-  updateView();
-}
-  function greetingFlat(alt) {
+
+  greetingFlat(alt) {
     if (alt == 1){
         bilDialog = `
         <div class="bilDialog">Hey,partner! Want to invest in a precision-laser?</div>`;
@@ -59,9 +58,8 @@ function jehovasVitne() {
         <div class="gameOver">Too much information, your left hemisphere of your brain is f**cking toast! You'll be forever scarred. <br> You lose -25 respect!</div>`;
         kulhetsFaktor -= 25;
     }
-    updateView();
 }
-
+}
 
 function jehovasPenalty(){
     kompisDialog = `
@@ -69,7 +67,6 @@ function jehovasPenalty(){
     if (kulhetsFaktor > 0) {
         kulhetsFaktor -= 15;
     }
-    updateView();
   }
 
 function bestemor() {
@@ -88,7 +85,7 @@ function bestemor() {
           <button onclick = "greetingBestemor(this)">👵(Listen to a story)</button>
           <button onclick = "greetingBestemor(this)">😴(Trip down memory lane)</button>
       </div>`
-      updateView();
+      
 }
 
 function flatEarther() {
@@ -107,10 +104,9 @@ function flatEarther() {
           <button onclick = "greetingFlat(this)">🐸(Tell me more)</button>
           <button onclick = "greetingFlat(this)">🧠(?)</button>
       </div>`;
-      updateView();
 }
 
-function greetingFlat(alt) {
+greetingFlat(alt) {
     if (alt == 1){
         bilDialog = `
         <div class="bilDialog">Howdy,partner! Want to invest in a space-laser?</div>`;
@@ -134,7 +130,6 @@ function greetingFlat(alt) {
         <div class="gameOver">The left hemisphere of your brain is f**cking toast! You'll be forever changed. <br> You lose -25 respect!</div>`;
         kulhetsFaktor -= 25;
     }
-    updateView();
 }
 
 function greetingJehova(alt2){
@@ -200,6 +195,5 @@ function greetingBestemor(alt3) {
         <div class="gameOver">Granny yaps on and on about how things were better before, it takes forever and you were spotted by the hood. <br> You lose 25 respect.</div>`;
         kulhetsFaktor -= 25;
     }
-    updateView();
 }
 
