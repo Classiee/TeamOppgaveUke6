@@ -6,7 +6,6 @@ let bilDialog;
 let exitText;
 let overText;
 
-
 updateView();
 function updateView() {
   document.getElementById("app").innerHTML = /*HTML*/ `
@@ -53,7 +52,6 @@ function start() {
     bilDialog = '';
     updateView();
 }
-
 
 function jehovasVitne() {
     exitText = '';
