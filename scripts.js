@@ -91,6 +91,8 @@ function kompis() {
     updateImg = "IMG/carkompis1upgrade2.png";
   }
 
+  document.querySelector(".kompisDialog").innerHTML = kompisDialog;
+
   updateView();
 }
 
