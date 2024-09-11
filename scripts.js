@@ -202,7 +202,7 @@ function hilse(hilsen) {
     } else {
       alert("Du hilste feil, og bilen din er ikke kul!");
       kulhetsFaktor -= 10;
-     alert("Kulhetsfaktor redusert.");
+      alert("Kulhetsfaktor redusert.");
       updateView();
       randomEvent();
     }
