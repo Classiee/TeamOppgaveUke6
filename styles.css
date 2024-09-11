@@ -93,10 +93,6 @@ body{
 }
 
 .gameOverBtn {
-    position: absolute;
-    left: 190px;
-    top: 340px;
-    font-size: 30px;
   position: absolute;
   user-select: none;
   left: 190px;
