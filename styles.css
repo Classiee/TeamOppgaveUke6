@@ -1,73 +1,33 @@
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .image {
-<<<<<<< Updated upstream
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-    border: 2px solid black;
-    border-radius: 25px;
-
-=======
   position: absolute;
   z-index: 1;
   top: 0px;
->>>>>>> Stashed changes
+  border: 2px solid black;
+  border-radius: 25px;
 }
-.text{
-    position: absolute;
-    z-index: 2;
-    left: 647px;
-    top: 16px;
-    font-size: larger;
-    text-shadow: 1px 1px 2px black;
-    color: rgb(214, 73, 73);
-    
+.text {
+  position: absolute;
+  z-index: 2;
+  left: 647px;
+  top: 16px;
+  font-size: larger;
+  text-shadow: 1px 1px 2px black;
+  color: rgb(214, 73, 73);
 }
 .progressBar {
-<<<<<<< Updated upstream
-    left: 670px;
-    top: 10px;
-    position: relative;
-    z-index: 2;
-    height: 22px;
-    width: 300px;
-    border: 2px solid rgb(214, 73, 73);
-    box-shadow: 2px 2px 5px black;
-    border-radius: 15px;
-    overflow: hidden;
-}
-.updateBar {
-    height: 100%;
-    width: 100%;
-    background-color: lightgreen;
-    text-align: center;
-    font-size: larger;
-    text-shadow: 1px 1px 2px black;
-    color: rgb(214, 73, 73);
-}
-.gameOver {
-    position: absolute;
-    z-index: 3;
-    height: 350px;
-    width: 500px;
-    left: 260px;
-    top: 100px;
-    font-size: 150px;
-    text-align: center;
-    text-shadow: 5px 5px 5px black;
-    color: rgb(214, 73, 73);
-    
-=======
   left: 670px;
+  top: 10px;
   position: relative;
   z-index: 2;
   height: 22px;
   width: 300px;
-  border: 2px solid gray;
+  border: 2px solid rgb(214, 73, 73);
   box-shadow: 2px 2px 5px black;
-  border-radius: 10px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .updateBar {
   height: 100%;
@@ -75,7 +35,8 @@ body{
   background-color: lightgreen;
   text-align: center;
   font-size: larger;
-  border-radius: 10px;
+  text-shadow: 1px 1px 2px black;
+  color: rgb(214, 73, 73);
 }
 .gameOver {
   position: absolute;
@@ -83,13 +44,11 @@ body{
   height: 350px;
   width: 500px;
   left: 260px;
-  user-select: none;
   top: 100px;
   font-size: 150px;
   text-align: center;
-  text-shadow: 2px 2px 5px black;
-  color: gray;
->>>>>>> Stashed changes
+  text-shadow: 5px 5px 5px black;
+  color: rgb(214, 73, 73);
 }
 
 .gameOverBtn {
@@ -100,50 +59,15 @@ body{
   font-size: 30px;
 }
 button {
-<<<<<<< Updated upstream
-    border-radius: 7px;
-    gap: 10px;
-    padding: 5px;
-    cursor: pointer;
-    margin: 5px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-button:hover {
-    transform: scale(1.07);
-}
-.bilDialog {
-    top: 130px;
-    left: 550px;
-    position: relative;
-    z-index: 2;
-    border: 2px solid black;
-    width: 230px;
-    height: auto;
-    background-color: rgba(212, 212, 212, 0.726);
-    border-radius: 50px;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 2px 2px 5px black;
-}
-.kompisDialog {
-    top: 190px;
-    left: 150px;
-    position: relative;
-    z-index: 2;
-    border: 2px solid black;
-    width: 200px;
-    height: auto;
-    background-color: rgba(212, 212, 212, 0.726);
-    border-radius: 50px;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 2px 2px 5px black;
-=======
   border-radius: 7px;
   gap: 10px;
-  user-select: none;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
+  margin: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+button:hover {
+  transform: scale(1.07);
 }
 .bilDialog {
   top: 130px;
@@ -153,25 +77,23 @@ button:hover {
   border: 2px solid black;
   width: 230px;
   height: auto;
-  background-color: white;
+  background-color: rgba(212, 212, 212, 0.726);
   border-radius: 50px;
   text-align: center;
   padding: 10px;
   box-shadow: 2px 2px 5px black;
 }
 .kompisDialog {
-  top: 130px;
+  top: 190px;
   left: 150px;
   position: relative;
   z-index: 2;
-  user-select: none;
   border: 2px solid black;
   width: 200px;
   height: auto;
-  background-color: white;
+  background-color: rgba(212, 212, 212, 0.726);
   border-radius: 50px;
   text-align: center;
   padding: 10px;
   box-shadow: 2px 2px 5px black;
->>>>>>> Stashed changes
 }
