@@ -2,18 +2,14 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .image {
-<<<<<<< Updated upstream
     position: absolute;
     z-index: 1;
     top: 0px;
     border: 2px solid black;
     border-radius: 25px;
-
-=======
   position: absolute;
   z-index: 1;
   top: 0px;
->>>>>>> Stashed changes
 }
 .text{
     position: absolute;
@@ -26,7 +22,6 @@ body{
     
 }
 .progressBar {
-<<<<<<< Updated upstream
     left: 670px;
     top: 10px;
     position: relative;
@@ -58,8 +53,6 @@ body{
     text-align: center;
     text-shadow: 5px 5px 5px black;
     color: rgb(214, 73, 73);
-    
-=======
   left: 670px;
   position: relative;
   z-index: 2;
@@ -89,7 +82,6 @@ body{
   text-align: center;
   text-shadow: 2px 2px 5px black;
   color: gray;
->>>>>>> Stashed changes
 }
 
 .gameOverBtn {
@@ -100,7 +92,6 @@ body{
   font-size: 30px;
 }
 button {
-<<<<<<< Updated upstream
     border-radius: 7px;
     gap: 10px;
     padding: 5px;
@@ -138,7 +129,6 @@ button:hover {
     text-align: center;
     padding: 10px;
     box-shadow: 2px 2px 5px black;
-=======
   border-radius: 7px;
   gap: 10px;
   user-select: none;
@@ -173,5 +163,4 @@ button:hover {
   text-align: center;
   padding: 10px;
   box-shadow: 2px 2px 5px black;
->>>>>>> Stashed changes
 }
