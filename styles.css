@@ -7,7 +7,6 @@ body{
     top: 0px;
     border: 2px solid black;
     border-radius: 25px;
-
 }
 .text{
     position: absolute;
@@ -51,7 +50,6 @@ body{
     text-align: center;
     text-shadow: 5px 5px 5px black;
     color: rgb(214, 73, 73);
-    
 }
 
 .gameOverBtn {
