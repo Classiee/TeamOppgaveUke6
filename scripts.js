@@ -150,6 +150,7 @@ function Kompis(type) {
         updateView();
     };
 }
+}
 
 function jehovasVitne() {
     bilDialog = `
