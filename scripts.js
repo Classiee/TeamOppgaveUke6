@@ -5,28 +5,28 @@ let updateImg;
 let kompisDialog;
 let bilDialog;
 let exitText;
-let myTimeout = setTimeout(start, 1000)
 
 updateView();
 function updateView() {
     document.getElementById('app').innerHTML = /*HTML*/`
     <div>
         <div class="progressBar">
-            <div style="width: ${kulhetsFaktor}%" class="updateBar"><strong>${kulhetsFaktor}</strong></div>
+            <div style="width: ${kulhetsFaktor}%" class="updateBar"><strong>${kulhetsFaktor}%</strong></div>
         </div>
+        <div class="text">😎</div>
             <img class="image" src="${updateImg ?? 'IMG/carempty.jpg'}"/>
             ${kompisDialog ?? ''}
             ${bilDialog ?? ''}
             ${exitText ?? ''}
         </div>
     `;
-        if (kulhetsFaktor >= 100) {
-            gameWon();
-        } else if (kulhetsFaktor < 0) {
-            gameOver();
-        }
+    if (kulhetsFaktor >= 100) {
+        gameWon();
+    } else if (kulhetsFaktor < 0) {
+        gameOver();
+    }
 }
-function gameOver(){
+function gameOver() {
     exitText = `
     <div class="gameOver">Game Over!
     <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
@@ -34,7 +34,7 @@ function gameOver(){
     bilDialog = '';
     updateView();
 }
-function gameWon(){
+function gameWon() {
     exitText = `
         <div class="gameOver">DU VANT!
         <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
@@ -42,15 +42,15 @@ function gameWon(){
     bilDialog = '';
     updateView();
 }
+
 function start() {
     exitText = `<div class="gameOver">Ready?
             <button class="gameOverBtn" onclick="placeHolder()">Start</button></div>`;
     kompisDialog = '';
     bilDialog = '';
-        updateView();
+    updateView();
 }
-
-function placeHolder(){
+function placeHolder() {
     if (kulhetsFaktor <= 30) {
         updateImg = 'IMG/caroil.jpg';
     } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
@@ -67,10 +67,10 @@ function placeHolder(){
     kompisDialog = `
         <div class="kompisDialog">Vil du ha en Upgrade?
             </div>`;
-            updateView();
+    updateView();
 }
 
- function Kompis(type) {
+function Kompis(type) {
     bilDialog = `
         <div class="bilDialog"> 
             <button onclick = "hilse()">👋</button>
@@ -83,7 +83,7 @@ function placeHolder(){
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
 
-    
+
     let baseImg, upgrade1Img, upgrade2Img;
     switch (type) {
         case 1:
@@ -107,7 +107,7 @@ function placeHolder(){
             upgrade2Img = "IMG/carempty.jpg";
     }
 
-    
+
     if (kulhetsFaktor <= 30) {
         updateImg = baseImg;
     } else if (kulhetsFaktor > 30 && kulhetsFaktor <= 60) {
@@ -115,7 +115,7 @@ function placeHolder(){
     } else if (kulhetsFaktor > 60 && kulhetsFaktor <= 100) {
         updateImg = upgrade2Img;
     }
-        skjulHilseValg();
+    skjulHilseValg();
 };
 
 function jehovasVitne() {
@@ -160,18 +160,18 @@ function hilse(hilsen) {
     if (hilsen === this.riktigHilsen) {
         if (kulhetsFaktor > 70) {
             kulhetsFaktor += 10;
-            } else {
-                alert("Greit nok, men du kan bli mye kulere!");
-            }
-    }   else {
-            alert("Du hilste feil, og bilen din er ikke kul!");
-            kulhetsFaktor -= 10;
-            if (kulhetsFaktor < 70) {
-                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
-            } else {
-                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
-            }
-        }  
+        } else {
+            alert("Greit nok, men du kan bli mye kulere!");
+        }
+    } else {
+        alert("Du hilste feil, og bilen din er ikke kul!");
+        kulhetsFaktor -= 10;
+        if (kulhetsFaktor < 70) {
+            alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+        } else {
+            alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+        }
+    }
     updateView();
 }
 
