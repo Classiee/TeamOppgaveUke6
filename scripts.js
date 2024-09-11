@@ -1,4 +1,3 @@
-
 let bil;
 let kulhetsFaktor = 0;
 let updateImg;
@@ -7,9 +6,10 @@ let bilDialog;
 let exitText;
 let overText;
 
+
 updateView();
 function updateView() {
-    document.getElementById('app').innerHTML = /*HTML*/`
+  document.getElementById("app").innerHTML = /*HTML*/ `
     <div>
         <div class="progressBar">
             <div style="width: ${kulhetsFaktor}%" class="updateBar"><strong>${kulhetsFaktor}%</strong></div>
@@ -32,17 +32,17 @@ function gameOver() {
     exitText = `
     <div class="gameOver">Game Over!
     <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
-    kompisDialog = '';
-    bilDialog = '';
-    updateView();
+  kompisDialog = "";
+  bilDialog = "";
+  updateView();
 }
 function gameWon() {
     exitText = `
         <div class="gameOver">DU VANT!
         <button class="gameOverBtn" onclick="location.reload()">Try again</button></div>`;
-    kompisDialog = '';
-    bilDialog = '';
-    updateView();
+  kompisDialog = "";
+  bilDialog = "";
+  updateView();
 }
 
 function start() {
@@ -54,129 +54,6 @@ function start() {
     updateView();
 }
 
-
-function Kompis() {
-    bilDialog = `
-        <div class="bilDialog"> 
-            <button onclick = "hilse()">👋</button>
-            <button onclick = "hilse()">👊</button>
-            <button onclick = "hilse()">🖕</button>
-        </div>`;
-    const hilsninger = ["high five", "fist bump", "nikk"];
-    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
-
-    if (kulhetsFaktor <= 30) {
-        updateImg = "IMG/carkompis1.png";
-    } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
-        updateImg = "IMG/carkompis1upgrade1.png";
-    } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
-        updateImg = "IMG/carkompis1upgrade2.png";
-    }
-
-    this.hils = function (hilsen) {
-        if (hilsen === this.riktigHilsen) {
-            if (kulhetsFaktor > 60) {
-                kulhetsFaktor += 10;
-                updateImg = upgrade2Img;
-            } else {
-                alert("Greit nok, men du kan bli mye kulere!");
-                kulhetsFaktor -= 5;
-            }
-        } else {
-            alert("Du hilste feil, og bilen din er ikke kul!");
-            kulhetsFaktor -= 10;
-            if (kulhetsFaktor < 70) {
-                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
-            } else {
-                alert(
-                    "Du fikk en kald skulder av kompisen din, det svekket bilens kulhetsFaktor."
-                );
-            }
-        }
-    }
-}
-
-function Kompis1() {
-    bilDialog = `
-        <div class="bilDialog"> 
-            <button onclick = "hilse()">👋</button>
-            <button onclick = "hilse()">👊</button>
-            <button onclick = "hilse()">🖕</button>
-        </div>`;
-    const hilsninger = ["high five", "fist bump", "nikk"];
-    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
-
-    if (kulhetsFaktor <= 30) {
-        updateImg = "IMG/carkompis2.png";
-    } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
-        updateImg = "IMG/carkompis2upgrade1.png";
-    } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
-        updateImg = "IMG/carkompis2upgrade2.png";
-    }
-
-    this.hils = function (hilsen) {
-        if (hilsen === this.riktigHilsen) {
-            if (kulhetsFaktor > 60) {
-                kulhetsFaktor += 10;
-                updateImg = upgrade2Img;
-            } else {
-                alert("Greit nok, men du kan bli mye kulere!");
-                kulhetsFaktor -= 5;
-            }
-        } else {
-            alert("Du hilste feil, og bilen din er ikke kul!");
-            kulhetsFaktor -= 10;
-            if (kulhetsFaktor < 70) {
-                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
-            } else {
-                alert(
-                    "Du fikk en kald skulder av kompisen din, det svekket bilens kulhetsFaktor."
-                );
-            }
-        }
-    }
-}
-
-function Kompis2() {
-    bilDialog = `
-        <div class="bilDialog"> 
-            <button onclick = "hilse()">👋</button>
-            <button onclick = "hilse()">👊</button>
-            <button onclick = "hilse()">🖕</button>
-        </div>`;
-    const hilsninger = ["high five", "fist bump", "nikk"];
-    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
-
-    if (kulhetsFaktor <= 30) {
-        updateImg = "IMG/carkompis3.png";
-    } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
-        updateImg = "IMG/carkompis3upgrade1.png";
-    } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
-        updateImg = "IMG/carkompis3upgrade2.png";
-    }
-
-    this.hils = function (hilsen) {
-        if (hilsen === this.riktigHilsen) {
-            if (kulhetsFaktor > 60) {
-                kulhetsFaktor += 10;
-                updateImg = upgrade2Img;
-            } else {
-                alert("Greit nok, men du kan bli mye kulere!");
-                kulhetsFaktor -= 5;
-            }
-        } else {
-            alert("Du hilste feil, og bilen din er ikke kul!");
-            kulhetsFaktor -= 10;
-            if (kulhetsFaktor < 70) {
-                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
-            } else {
-                alert(
-                    "Du fikk en kald skulder av kompisen din, det svekket bilens kulhetsFaktor."
-                );
-            }
-        }
-    }
-}
 
 function jehovasVitne() {
     exitText = '';
@@ -328,32 +205,3 @@ function flatEarther() {
       updateView();
 }
 
-function upgrade() {
-
-}
-
-
-function hilse(hilsen) {
-    if (hilsen === this.riktigHilsen) {
-        if (kulhetsFaktor > 70) {
-            kulhetsFaktor += 10;
-        } else {
-            alert("Greit nok, men du kan bli mye kulere!");
-        }
-    } else {
-        alert("Du hilste feil, og bilen din er ikke kul!");
-        kulhetsFaktor -= 10;
-        if (kulhetsFaktor < 70) {
-            alert("Du er fortsatt kul, men dette ble en klein situasjon.");
-        } else {
-            alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
-        }
-    }
-    updateView();
-}
-
-
-function skjulHilseValg() {
-    document.getElementById("ukjent").style.display = "none";
-    document.getElementById("ukjent").style.display = "block";
-}

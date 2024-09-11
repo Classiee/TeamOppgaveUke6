@@ -1,12 +1,16 @@
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .image {
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-    border: 2px solid black;
-    border-radius: 25px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  border: 2px solid black;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .text{
     position: absolute;
@@ -32,56 +36,61 @@ body{
     box-shadow: 2px 2px 5px black;
 }
 .progressBar {
-    left: 670px;
-    top: 10px;
-    position: relative;
-    z-index: 2;
-    height: 22px;
-    width: 300px;
-    border: 2px solid rgb(214, 73, 73);
-    box-shadow: 2px 2px 5px black;
-    border-radius: 15px;
-    overflow: hidden;
+  left: 670px;
+  top: 10px;
+  position: relative;
+  z-index: 2;
+  height: 22px;
+  width: 300px;
+  border: 2px solid rgb(214, 73, 73);
+  box-shadow: 2px 2px 5px black;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .updateBar {
-    height: 100%;
-    width: 100%;
-    background-color: lightgreen;
-    text-align: center;
-    font-size: larger;
-    text-shadow: 1px 1px 2px black;
-    color: rgb(214, 73, 73);
+  height: 100%;
+  width: 100%;
+  background-color: lightgreen;
+  text-align: center;
+  font-size: larger;
+  text-shadow: 1px 1px 2px black;
+  color: rgb(214, 73, 73);
 }
 .gameOver {
-    position: absolute;
-    z-index: 3;
-    height: 350px;
-    width: 500px;
-    left: 260px;
-    top: 100px;
-    font-size: 150px;
-    text-align: center;
-    text-shadow: 5px 5px 5px black;
-    color: rgb(214, 73, 73);
+  position: absolute;
+  z-index: 3;
+  height: 350px;
+  width: 500px;
+  left: 260px;
+  top: 100px;
+  font-size: 150px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  color: rgb(214, 73, 73);
 }
 
 .gameOverBtn {
   position: absolute;
   user-select: none;
   left: 190px;
+  padding: 8px 55px;
+  letter-spacing: 2px;
+  font-weight: normal;
   top: 340px;
+
   font-size: 30px;
+  transition: 0.2s ease;
 }
 button {
-    border-radius: 7px;
-    gap: 10px;
-    padding: 5px;
-    cursor: pointer;
-    margin: 5px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 7px;
+  gap: 10px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 button:hover {
-    transform: scale(1.07);
+  transform: scale(1.07);
 }
 .bilDialog {
     top: 200px;
