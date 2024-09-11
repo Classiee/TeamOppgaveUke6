@@ -62,7 +62,7 @@ function placeHolder() {
   exitText = "";
   bilDialog = `
         <div class="bilDialog"> 
-            <button onclick = "">Upgrades? Tja...</button>
+            <button onclick = "upgrade()">Upgrades? Tja...</button>
             <button onclick = "">why, kjerra er jo grom?</button>
         </div>`;
   kompisDialog = `
@@ -167,7 +167,10 @@ function flatEarther() {
     <div class="kompisDialog"></div>`;
 }
 
-function upgrade() {}
+function upgrade() {
+  updateImg = "IMG/carflatupgrade2.jpg";
+  updateView();
+}
 
 function hilse(hilsen) {
   if (hilsen === this.riktigHilsen) {
