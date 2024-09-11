@@ -70,12 +70,14 @@ function placeHolder(){
             updateView();
 }
 
- function Kompis(type) {
+
+
+function Kompis(type) {
     bilDialog = `
         <div class="bilDialog"> 
-            <button onclick = "hilse()">👋</button>
-            <button onclick = "hilse()">👊</button>
-            <button onclick = "hilse()">🖕</button>
+            <button onclick="this.hilse('high five')">👋</button>
+            <button onclick="this.hilse('fist bump')">👊</button>
+            <button onclick="this.hilse('nikk')">🖕</button>
         </div>`;
     kompisDialog = `
         <div class="kompisDialog">Halla kompis!
@@ -83,7 +85,6 @@ function placeHolder(){
     const hilsninger = ["high five", "fist bump", "nikk"];
     this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
 
-    
     let baseImg, upgrade1Img, upgrade2Img;
     switch (type) {
         case 1:
@@ -107,7 +108,6 @@ function placeHolder(){
             upgrade2Img = "IMG/carempty.jpg";
     }
 
-    
     if (kulhetsFaktor <= 30) {
         updateImg = baseImg;
     } else if (kulhetsFaktor > 30 && kulhetsFaktor <= 60) {
@@ -115,40 +115,125 @@ function placeHolder(){
     } else if (kulhetsFaktor > 60 && kulhetsFaktor <= 100) {
         updateImg = upgrade2Img;
     }
-        skjulHilseValg();
-};
+    skjulHilseValg();
+
+    this.hilse = (hilsen) => {
+        if (hilsen === this.riktigHilsen) {
+            if (kulhetsFaktor > 70) {
+                kulhetsFaktor += 10;
+            } else {
+                alert("Greit nok, men du kan bli mye kulere!");
+            }
+        } else {
+            alert("Du hilste feil, og bilen din er ikke kul!");
+            kulhetsFaktor -= 10;
+            if (kulhetsFaktor < 70) {
+                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+            } else {
+                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+            }
+        }
+        updateView();
+    };
+}
 
 function jehovasVitne() {
     bilDialog = `
         <div class="bilDialog"> 
-            <button onclick = "hilse()">👋</button>
-            <button onclick = "hilse()">👊</button>
-            <button onclick = "hilse()">🖕</button>
+            <button onclick="this.hilse('high five')">👋</button>
+            <button onclick="this.hilse('fist bump')">👊</button>
+            <button onclick="this.hilse('nikk')">🖕</button>
         </div>`;
     kompisDialog = `
     <div class="kompisDialog"></div>`;
+    
+    const hilsninger = ["high five", "fist bump", "nikk"];
+    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    this.hilse = (hilsen) => {
+        if (hilsen === this.riktigHilsen) {
+            if (kulhetsFaktor > 70) {
+                kulhetsFaktor += 10;
+            } else {
+                alert("Greit nok, men du kan bli mye kulere!");
+            }
+        } else {
+            alert("Du hilste feil, og bilen din er ikke kul!");
+            kulhetsFaktor -= 10;
+            if (kulhetsFaktor < 70) {
+                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+            } else {
+                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+            }
+        }
+        updateView();
+    };
 }
 
 function bestemor() {
     bilDialog = `
         <div class="bilDialog"> 
-            <button onclick = "hilse()">👋</button>
-            <button onclick = "hilse()">👊</button>
-            <button onclick = "hilse()">🖕</button>
+            <button onclick="this.hilse('high five')">👋</button>
+            <button onclick="this.hilse('fist bump')">👊</button>
+            <button onclick="this.hilse('nikk')">🖕</button>
         </div>`;
     kompisDialog = `
     <div class="kompisDialog"></div>`;
+    
+    const hilsninger = ["high five", "fist bump", "nikk"];
+    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    this.hilse = (hilsen) => {
+        if (hilsen === this.riktigHilsen) {
+            if (kulhetsFaktor > 70) {
+                kulhetsFaktor += 10;
+            } else {
+                alert("Greit nok, men du kan bli mye kulere!");
+            }
+        } else {
+            alert("Du hilste feil, og bilen din er ikke kul!");
+            kulhetsFaktor -= 10;
+            if (kulhetsFaktor < 70) {
+                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+            } else {
+                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+            }
+        }
+        updateView();
+    };
 }
 
 function flatEarther() {
     bilDialog = `
         <div class="bilDialog"> 
-            <button onclick = "hilse()">👋</button>
-            <button onclick = "hilse()">👊</button>
-            <button onclick = "hilse()">🖕</button>
+            <button onclick="this.hilse('high five')">👋</button>
+            <button onclick="this.hilse('fist bump')">👊</button>
+            <button onclick="this.hilse('nikk')">🖕</button>
         </div>`;
     kompisDialog = `
     <div class="kompisDialog"></div>`;
+    
+    const hilsninger = ["high five", "fist bump", "nikk"];
+    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    this.hilse = (hilsen) => {
+        if (hilsen === this.riktigHilsen) {
+            if (kulhetsFaktor > 70) {
+                kulhetsFaktor += 10;
+            } else {
+                alert("Greit nok, men du kan bli mye kulere!");
+            }
+        } else {
+            alert("Du hilste feil, og bilen din er ikke kul!");
+            kulhetsFaktor -= 10;
+            if (kulhetsFaktor < 70) {
+                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+            } else {
+                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+            }
+        }
+        updateView();
+    };
 }
 
 function upgrade() {
@@ -177,9 +262,4 @@ function hilse(hilsen) {
 
 function randomEvent() {
 
-}
-
-function skjulHilseValg() {
-    document.getElementById("ukjent").style.display = "none";
-    document.getElementById("ukjent").style.display = "block";
 }
