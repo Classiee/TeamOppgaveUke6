@@ -241,7 +241,6 @@ function kompis1() {
             <div class="kompisDialog">Yo, its your best friend! Throw me an insult, if you dare!
                 </div>`;
 
-  const hilsninger = ["high five", "fist bump", "nikk"];
   riktigHilsen = "nikk";
 
   if (kulhetsFaktor <= 30) {
@@ -267,7 +266,6 @@ function kompis2() {
             <div class="kompisDialog">Yo, its Iron Man! What's like a rock and hurts like hell when it's my fist??
                 </div>`;
 
-  const hilsninger = ["high five", "fist bump", "nikk"];
   riktigHilsen = "fist bump";
 
   if (kulhetsFaktor <= 30) {
