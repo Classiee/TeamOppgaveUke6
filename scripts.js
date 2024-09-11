@@ -82,7 +82,7 @@ function greetingFlat(alt) {
     overText = `
           <div class="overText">Great job, you just scammed a scammer! You earn 10 respect.</div>`;
     kulhetsFaktor += 10;
-    setTimeout(randomEvent, 2000);
+    setTimeout(randomEvent, 4000);
   } else if (alt == 2) {
     bilDialog = `
           <div class="bilDialog">Please don't...</div>`;
@@ -91,12 +91,12 @@ function greetingFlat(alt) {
     overText = `
           <div class="overText">The Flat-Earther hands you a tinfoil-hat.<br> You lose 15 respect</div>`;
     kulhetsFaktor -= 15;
-    setTimeout(randomEvent, 2000);
+    setTimeout(randomEvent, 4000);
   } else {
     overText = `
           <div class="overText">The left hemisphere of your brain is f**cking toast! You'll be forever changed. <br> You lose -25 respect!</div>`;
     kulhetsFaktor -= 25;
-    setTimeout(randomEvent, 2000);
+    setTimeout(randomEvent, 4000);
   }
   updateView();
 }
@@ -110,7 +110,7 @@ function greetingJehova(alt2) {
       overText = `
             <div class="overText">"Oh no, you are persuaded to cut them a check, now they hang around your ride in anticipation of more $. <br> You lose respect -20!"</div>`;
       kulhetsFaktor -= 10;
-      setTimeout(randomEvent, 2000);
+      setTimeout(randomEvent, 4000);
     } else if (alt2 == 2) {
       kompisDialog = `
             <div class="kompisDialog">May I offer you some holy water straight from the heavens, my good sir?</div>`;
@@ -119,7 +119,7 @@ function greetingJehova(alt2) {
       overText = `
             <div class="overText">With a silver tongue and an enticing offer you are now forever indebted through various subscription models.<br> You lose 15 respect</div>`;
       kulhetsFaktor -= 15;
-      setTimeout(randomEvent, 2000);
+      setTimeout(randomEvent, 4000);
     } else {
       kompisDialog = `
             <div class="kompisDialog">May pray for you, mister?</div>`;
@@ -128,7 +128,7 @@ function greetingJehova(alt2) {
       overText = `
             <div class="overText">You make the most out of the situation and form a cult. <br> You earn 25 respect.</div>`;
       kulhetsFaktor += 25;
-      setTimeout(randomEvent, 2000);
+      setTimeout(randomEvent, 4000);
     }
   
   updateView();
@@ -143,7 +143,7 @@ function greetingBestemor(alt3) {
     overText = `
         <div class="overText">You stomp on the gas and deliver granny to the good lord. <br> You earn 20 respect.</div>`;
     kulhetsFaktor += 20;
-    setTimeout(randomEvent, 2000);
+    setTimeout(randomEvent, 4000);
   } else if (alt3 == 2) {
     kompisDialog = `
         <div class="kompisDialog">Let me tell you a story, young one...</div>`;
@@ -152,7 +152,7 @@ function greetingBestemor(alt3) {
     overText = `
         <div class="overText">You feel exsausted from listening to granny's lessons from life. <br> You lose 15 respect.</div>`;
     kulhetsFaktor -= 15;
-    setTimeout(randomEvent, 2000);
+    setTimeout(randomEvent, 4000);
   } else {
     kompisDialog = `
         <div class="kompisDialog">These prices, the youth, things were different when I were young...</div>`;
@@ -161,7 +161,7 @@ function greetingBestemor(alt3) {
     overText = `
         <div class="overText">Granny yaps on and on about how things were better before, it takes forever and you were spotted by the hood. <br> You lose 25 respect.</div>`;
     kulhetsFaktor -= 25;
-    setTimeout(randomEvent, 2000);
+    setTimeout(randomEvent, 4000);
   }
   updateView();
 }
