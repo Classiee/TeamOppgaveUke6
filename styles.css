@@ -7,6 +7,9 @@ body {
   top: 0px;
   border: 2px solid black;
   border-radius: 25px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
 }
 .text {
   position: absolute;
@@ -47,8 +50,8 @@ body {
   top: 100px;
   font-size: 150px;
   text-align: center;
-  text-shadow: 5px 5px 5px black;
-  color: rgb(214, 73, 73);
+  text-shadow: 2px 2px 5px black;
+  color: gray;
 }
 
 .gameOverBtn {
@@ -59,6 +62,43 @@ body {
   font-size: 30px;
 }
 button {
+  border-radius: 7px;
+  gap: 10px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+button:hover {
+  transform: scale(1.07);
+}
+.bilDialog {
+  top: 130px;
+  left: 550px;
+  position: relative;
+  z-index: 2;
+  border: 2px solid black;
+  width: 230px;
+  height: auto;
+  background-color: rgba(212, 212, 212, 0.726);
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 5px black;
+}
+.kompisDialog {
+  top: 190px;
+  left: 150px;
+  position: relative;
+  z-index: 2;
+  border: 2px solid black;
+  width: 200px;
+  height: auto;
+  background-color: rgba(212, 212, 212, 0.726);
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 5px black;
   border-radius: 7px;
   gap: 10px;
   padding: 5px;

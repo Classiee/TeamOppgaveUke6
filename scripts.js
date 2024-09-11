@@ -69,7 +69,7 @@ function gameOver() {
 }
 
 function Kompis(type) {
-  bilDialog = `
+    bilDialog = `
         <div class="bilDialog"> 
             <button onclick = "hilse()">👋</button>
             <button onclick = "hilse()">👊</button>
@@ -130,30 +130,125 @@ function Kompis(type) {
       }
     }
     skjulHilseValg();
-  };
+
+    this.hilse = (hilsen) => {
+        if (hilsen === this.riktigHilsen) {
+            if (kulhetsFaktor > 70) {
+                kulhetsFaktor += 10;
+            } else {
+                alert("Greit nok, men du kan bli mye kulere!");
+            }
+        } else {
+            alert("Du hilste feil, og bilen din er ikke kul!");
+            kulhetsFaktor -= 10;
+            if (kulhetsFaktor < 70) {
+                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+            } else {
+                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+            }
+        }
+        updateView();
+    };
 }
+}
+
 function jehovasVitne() {
-  app.innerHTML += /*HTML*/ `
-    <button onclick = "hilse()">👊</button>
-    <button onclick = "hilse()">🙏</button>
-    <button onclick = "hilse()">🫵</button>
-    `;
+    bilDialog = `
+        <div class="bilDialog"> 
+            <button onclick="this.hilse('high five')">👋</button>
+            <button onclick="this.hilse('fist bump')">👊</button>
+            <button onclick="this.hilse('nikk')">🖕</button>
+        </div>`;
+    kompisDialog = `
+    <div class="kompisDialog"></div>`;
+    
+    const hilsninger = ["high five", "fist bump", "nikk"];
+    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    this.hilse = (hilsen) => {
+        if (hilsen === this.riktigHilsen) {
+            if (kulhetsFaktor > 70) {
+                kulhetsFaktor += 10;
+            } else {
+                alert("Greit nok, men du kan bli mye kulere!");
+            }
+        } else {
+            alert("Du hilste feil, og bilen din er ikke kul!");
+            kulhetsFaktor -= 10;
+            if (kulhetsFaktor < 70) {
+                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+            } else {
+                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+            }
+        }
+        updateView();
+    };
 }
 
 function bestemor() {
-  app.innerHTML += /*HTML*/ `
-    <button onclick = "hilse()">👊</button>
-    <button onclick = "hilse()">🙏</button>
-    <button onclick = "hilse()">🫵</button>
-    `;
+    bilDialog = `
+        <div class="bilDialog"> 
+            <button onclick="this.hilse('high five')">👋</button>
+            <button onclick="this.hilse('fist bump')">👊</button>
+            <button onclick="this.hilse('nikk')">🖕</button>
+        </div>`;
+    kompisDialog = `
+    <div class="kompisDialog"></div>`;
+    
+    const hilsninger = ["high five", "fist bump", "nikk"];
+    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    this.hilse = (hilsen) => {
+        if (hilsen === this.riktigHilsen) {
+            if (kulhetsFaktor > 70) {
+                kulhetsFaktor += 10;
+            } else {
+                alert("Greit nok, men du kan bli mye kulere!");
+            }
+        } else {
+            alert("Du hilste feil, og bilen din er ikke kul!");
+            kulhetsFaktor -= 10;
+            if (kulhetsFaktor < 70) {
+                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+            } else {
+                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+            }
+        }
+        updateView();
+    };
 }
 
 function flatEarther() {
-  app.innerHTML += /*HTML*/ `
-    <button onclick = "hilse()">👊</button>
-    <button onclick = "hilse()">🙏</button>
-    <button onclick = "hilse()">🫵</button>
-    `;
+    bilDialog = `
+        <div class="bilDialog"> 
+            <button onclick="this.hilse('high five')">👋</button>
+            <button onclick="this.hilse('fist bump')">👊</button>
+            <button onclick="this.hilse('nikk')">🖕</button>
+        </div>`;
+    kompisDialog = `
+    <div class="kompisDialog"></div>`;
+    
+    const hilsninger = ["high five", "fist bump", "nikk"];
+    this.riktigHilsen = hilsninger[Math.floor(Math.random() * hilsninger.length)];
+    
+    this.hilse = (hilsen) => {
+        if (hilsen === this.riktigHilsen) {
+            if (kulhetsFaktor > 70) {
+                kulhetsFaktor += 10;
+            } else {
+                alert("Greit nok, men du kan bli mye kulere!");
+            }
+        } else {
+            alert("Du hilste feil, og bilen din er ikke kul!");
+            kulhetsFaktor -= 10;
+            if (kulhetsFaktor < 70) {
+                alert("Du er fortsatt kul, men dette ble en klein situasjon.");
+            } else {
+                alert("Du fikk en kald skulder av kompisen din, det svekket bilens kulhet.");
+            }
+        }
+        updateView();
+    };
 }
 
 function upgrade() {}
