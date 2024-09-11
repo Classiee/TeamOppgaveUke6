@@ -75,14 +75,18 @@ function placeHolder() {
 }
 
 function kompis() {
-  bilDialog = `
+    bilDialog = `
           <div class="bilDialog"> 
               <button onclick = "hilse('high five')">👋</button>
               <button onclick = "hilse('fist bump')">👊</button>
               <button onclick = "hilse('nikk')">🖕</button>
           </div>`;
+    
+    kompisDialog = `
+          <div class="kompisDialog">Yo, its Peter! What's got five fingers and says "clap" if smacked together?
+              </div>`;
           
-  this.riktigHilsen = "high five";
+  riktigHilsen = "high five";
 
   if (kulhetsFaktor <= 30) {
     updateImg = "IMG/carkompis1.png";
@@ -91,30 +95,11 @@ function kompis() {
   } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
     updateImg = "IMG/carkompis1upgrade2.png";
   }
+  
+  document.querySelector('.kompisDialog').innerHTML = kompisDialog;
 
   updateView();
 }
-
-function kompis() {
-    bilDialog = `
-            <div class="bilDialog"> 
-                <button onclick = "hilse('high five')">👋</button>
-                <button onclick = "hilse('fist bump')">👊</button>
-                <button onclick = "hilse('nikk')">🖕</button>
-            </div>`;
-            
-    riktigHilsen = "high five";
-  
-    if (kulhetsFaktor <= 30) {
-      updateImg = "IMG/carkompis1.png";
-    } else if (kulhetsFaktor >= 30 && kulhetsFaktor <= 60) {
-      updateImg = "IMG/carkompis1upgrade1.png";
-    } else if (kulhetsFaktor >= 60 && kulhetsFaktor <= 100) {
-      updateImg = "IMG/carkompis1upgrade2.png";
-    }
-  
-    updateView();
-  }
   
   function kompis1() {
     bilDialog = `
@@ -123,6 +108,11 @@ function kompis() {
                 <button onclick = "hilse('fist bump')">👊</button>
                 <button onclick = "hilse('nikk')">🖕</button>
             </div>`;
+    
+    kompisDialog = `
+            <div class="kompisDialog">Yo, its your best friend! Throw me an insult, if you dare!
+                </div>`;        
+    
     const hilsninger = ["high five", "fist bump", "nikk"];
     riktigHilsen = "nikk"; 
   
@@ -144,6 +134,11 @@ function kompis() {
                 <button onclick = "hilse('fist bump')">👊</button>
                 <button onclick = "hilse('nikk')">🖕</button>
             </div>`;
+            
+    kompisDialog = `
+            <div class="kompisDialog">Yo, its Iron Man! What's like a rock and hurts like hell when it's my fist??
+                </div>`;
+                
     const hilsninger = ["high five", "fist bump", "nikk"];
     riktigHilsen = "fist bump"; 
   
