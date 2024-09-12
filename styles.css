@@ -72,7 +72,7 @@ body {
 .gameOverBtn {
   position: absolute;
   user-select: none;
-  left: 190px;
+  left: 120px;
   padding: 8px 55px;
   letter-spacing: 2px;
   font-weight: normal;
